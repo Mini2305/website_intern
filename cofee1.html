@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo">
+                <img src="logo.png" alt="The coffee shop">
+            </div>
+            <h1>SARA Coffee Shop</h1>
+            
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                &#9776;
+            </button>
+            <nav class="navigation">
+                <ul class="list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact">Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to Our Coffee Shop</h2>
+            <p>
+                Experience the best coffee in town. Feel free to explore our services.<br>
+                It's your time to enjoy the real taste of our coffee and other complements.<br>
+                Let's try our best-selling products!
+            </p>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>
+                Welcome to Sara Coffee Shop, where every cup tells a story.<br>
+                Nestled in ECR Road-Chennai, we brew more than just coffee—we craft experiences.<br>
+                From our carefully sourced beans to our cozy ambiance,<br>
+                every visit promises a moment of indulgence.<br>
+                Join us for a taste of passion in every sip.
+            </p>
+        </section>
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <div class="menu-section">
+                <h3>Coffee</h3>
+                <ul class="menu">
+                    <li><img src="cap.jpg" alt="Cappuccino"><br>Cappuccino<br><button class="add-to-cart" data-name="Cappuccino" data-price="150">Add to Cart</button></li>
+                    <li><img src="esp.jpg" alt="Espresso"><br>Espresso<br><button class="add-to-cart" data-name="Espresso" data-price="120">Add to Cart</button></li>
+                    <li><img src="Cold-Coffee.jpg" alt="Cold Coffee"><br>Cold Coffee<br><button class="add-to-cart" data-name="Cold Coffee" data-price="130">Add to Cart</button></li>
+                    <li><img src="tea-latte.png" alt="Lattes"><br>Lattes<br><button class="add-to-cart" data-name="Lattes" data-price="140">Add to Cart</button></li>
+                </ul>
+            </div>
+            <div class="menu-section">
+                <h3>Tea</h3>
+                <ul>
+                    <li><img src="chaii.png" alt="Cappuccino"><br>Chai<br><button class="add-to-cart" data-name="Chaii" data-price="150">Add to Cart</button></li>
+                    <li><img src="Lem.png" alt="Espresso"><br>Lemon tea<br><button class="add-to-cart" data-name="Lemon tea" data-price="110">Add to Cart</button></li>
+                    <li><img src="green.png" alt="Cold Coffee"><br>Green tea<br><button class="add-to-cart" data-name="Green tea" data-price="99">Add to Cart</button></li>
+                    <li><img src="gin.png" alt="Lattes"><br>Ginger Tea<br><button class="add-to-cart" data-name="Ginger tea" data-price="130">Add to Cart</button></li>
+                </ul>
+            </div>
+            <div class="menu-section">
+                <h3>Pastries</h3>
+                <ul>
+                    <li><img src="cream.png" alt="Cream bun"><br>Cream bun<br><button class="add-to-cart" data-name="Cream bun" data-price="80">Add to Cart</button></li>
+                    <li><img src="honey.png" alt="Espresso"><br>Honey bun<br><button class="add-to-cart" data-name="Honey bun" data-price="110">Add to Cart</button></li>
+                    <li><img src="cake.png" alt="Cold Coffee"><br>Cakes<br><button class="add-to-cart" data-name="Cakes" data-price="70">Add to Cart</button></li>
+                    <li><img src="bis.png" alt="Lattes"><br>Biscuits<br><button class="add-to-cart" data-name="Biscuits" data-price="60">Add to Cart</button></li>
+                </ul>
+            </div>
+        </section>
+    
+            <div class="menu-section">
+            <h2>Best Sellings</h2>
+            <ul >
+                <li><img src="cap.jpg" alt="Cream bun"><br>Cappuccino<br><button class="add-to-cart" data-name="Cappuccino" data-price="150">Add to Cart</button></li>
+                <li><img src="green.png" alt="Espresso"><br>Green tea<br><button class="add-to-cart" data-name="Green tea" data-price="99">Add to Cart</button></li>
+                <li><img src="honey.png" alt="Cold Coffee"><br>Honey bun<br><button class="add-to-cart" data-name="Honey bun" data-price="110">Add to Cart</button></li>
+                <li><img src="Lem.png" alt="Lattes"><br>Lemon tea<br><button class="add-to-cart" data-name="Lemon tea" data-price="110">Add to Cart</button></li>
+            </ul>
+        </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            
+                <p>Phone: +91 456730975</p>
+                <p>Email: coffee@123gmail.com</p>
+                <p>Instagram: @The_Coffee</p>
+            
+        </section>
+<section id="cart">
+        <div class="cart-section"></div>
+            <button id="view-cart" class="view-cart">View Cart & Generate Bill</button>
+        </div>
+    </section>
+        <section id="review">
+            <h2>Review Your Order</h2>
+            <div class="review-container">
+                <p id="review-items"></p>
+                <p id="total-amount"></p>
+                <label for="user-review">Your Review: </label>
+                <textarea id="user-review" placeholder="Write your review here..."></textarea>
+                <button id="submit-review">Submit Review</button>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; SARA Coffee Shop. All rights reserved.</p>
+    </footer>
+    <script src="script1.js"></script>
+</body>
+</html>
